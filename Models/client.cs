@@ -11,8 +11,7 @@ namespace counselorReview.Models
     public class Client
     {
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]public string Id { get; set; } = ObjectId.GenerateNewId().ToString();
 
         [BsonRequired]
         public string? FullName { get; set; }
@@ -23,6 +22,6 @@ namespace counselorReview.Models
         [BsonRequired]
         public string? Password { get; set; } 
 
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime DateRegistered { get; set; } 
     }
 }

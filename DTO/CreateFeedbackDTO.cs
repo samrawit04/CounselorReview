@@ -1,4 +1,4 @@
-namespace counselorReview.Models
+namespace counselorReview.DTO
 {
     public class CreateFeedbackDTO
     {

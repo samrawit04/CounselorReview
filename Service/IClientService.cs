@@ -1,3 +1,4 @@
+using counselorReview.DTO;
 using counselorReview.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -6,6 +7,7 @@ namespace counselorReview.Services
 {
     public interface IClientService
     {
+     Task<Client> SignUpAsync(CreateClientDTO createClientDto);
         Task<List<Client>> GetAllAsync();
         Task<Client?> GetByIdAsync(string id);
         Task<Client> CreateAsync(Client client);

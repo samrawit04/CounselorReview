@@ -1,40 +1,42 @@
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\appsettings.json
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\CounselorReview.staticwebassets.endpoints.json
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\CounselorReview.exe
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\CounselorReview.deps.json
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\CounselorReview.runtimeconfig.json
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\CounselorReview.dll
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\CounselorReview.pdb
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\DnsClient.dll
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\Microsoft.OpenApi.dll
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\MongoDB.Bson.dll
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\MongoDB.Driver.dll
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\SharpCompress.dll
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\Snappier.dll
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\HP\elective_assignment\CounselorReview\bin\Debug\net6.0\ZstdSharp.dll
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.csproj.AssemblyReference.cache
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.AssemblyInfoInputs.cache
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.AssemblyInfo.cs
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.csproj.CoreCompileInputs.cache
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\scopedcss\bundle\CounselorReview.styles.css
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\staticwebassets.build.endpoints.json
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\staticwebassets\msbuild.CounselorReview.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\staticwebassets\msbuild.CounselorReview.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\staticwebassets\msbuild.build.CounselorReview.props
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CounselorReview.props
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CounselorReview.props
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\Counselo.6FD0125A.Up2Date
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.dll
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\refint\CounselorReview.dll
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.pdb
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.genruntimeconfig.cache
-C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\ref\CounselorReview.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\appsettings.json
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\CounselorReview.staticwebassets.endpoints.json
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\CounselorReview.exe
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\CounselorReview.deps.json
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\CounselorReview.runtimeconfig.json
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\CounselorReview.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\CounselorReview.pdb
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\DnsClient.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\Snappier.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\CounselorReview.csproj.AssemblyReference.cache
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\CounselorReview.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\CounselorReview.AssemblyInfoInputs.cache
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\CounselorReview.AssemblyInfo.cs
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\CounselorReview.csproj.CoreCompileInputs.cache
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\CounselorReview.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\CounselorReview.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\CounselorReview.sourcelink.json
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\scopedcss\bundle\CounselorReview.styles.css
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\staticwebassets\msbuild.CounselorReview.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\staticwebassets\msbuild.CounselorReview.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\staticwebassets\msbuild.build.CounselorReview.props
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CounselorReview.props
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CounselorReview.props
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\Counselo.6FD0125A.Up2Date
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\CounselorReview.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\refint\CounselorReview.dll
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\CounselorReview.pdb
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\CounselorReview.genruntimeconfig.cache
+C:\Users\Samri\My Collection\4th Year\classMaterial\ELECTIVE COURSE MATERIAL\project\CounselorReview\obj\Debug\net6.0\ref\CounselorReview.dll

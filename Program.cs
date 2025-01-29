@@ -25,8 +25,15 @@ builder.Services.AddScoped<IMongoDatabase>(sp =>
     return client.GetDatabase(settings.DatabaseName);
 });
 
+// Register MongoDbContext
+builder.Services.AddScoped<IMongoDbContext, MongoDbContext>(sp =>
+{
+    var database = sp.GetRequiredService<IMongoDatabase>();
+    return new MongoDbContext(database); // Pass the database to your context
+});
+
 // Register Services
-builder.Services.AddScoped<ClientService>();
+builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<CounselorService>();
 builder.Services.AddScoped<FeedbackService>();
 

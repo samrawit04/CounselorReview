@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\elective_assignment\\CounselorReview\\CounselorReview.csproj": {}
+    "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\CounselorReview\\CounselorReview.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\elective_assignment\\CounselorReview\\CounselorReview.csproj": {
+    "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\CounselorReview\\CounselorReview.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\elective_assignment\\CounselorReview\\CounselorReview.csproj",
+        "projectUniqueName": "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\CounselorReview\\CounselorReview.csproj",
         "projectName": "CounselorReview",
-        "projectPath": "C:\\Users\\HP\\elective_assignment\\CounselorReview\\CounselorReview.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\elective_assignment\\CounselorReview\\obj\\",
+        "projectPath": "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\CounselorReview\\CounselorReview.csproj",
+        "packagesPath": "C:\\Users\\Samri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\CounselorReview\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Samri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[3.1.0, )"
@@ -72,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
