@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\counselorreview\\..csproj": {}
+    "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\CounselorReview\\..csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\counselorreview\\..csproj": {
+    "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\CounselorReview\\..csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\counselorreview\\..csproj",
+        "projectUniqueName": "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\CounselorReview\\..csproj",
         "projectName": ".",
-        "projectPath": "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\counselorreview\\..csproj",
+        "projectPath": "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\CounselorReview\\..csproj",
         "packagesPath": "C:\\Users\\Samri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\counselorreview\\obj\\",
+        "outputPath": "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\CounselorReview\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Samri\\AppData\\Roaming\\NuGet\\NuGet.Config"

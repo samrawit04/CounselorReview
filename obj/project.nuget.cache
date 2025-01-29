@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1TM8xA0vnRo=",
+  "dgSpecHash": "VZJj8Xo681M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\counselorreview\\..csproj",
+  "projectFilePath": "C:\\Users\\Samri\\My Collection\\4th Year\\classMaterial\\ELECTIVE COURSE MATERIAL\\project\\CounselorReview\\..csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Samri\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Samri\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.1\\microsoft.aspnetcore.authentication.jwtbearer.9.0.1.nupkg.sha512",
