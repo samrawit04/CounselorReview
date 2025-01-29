@@ -16,7 +16,25 @@ namespace counselorReview.Controllers
         {
             _clientService = clientService;
         }
+ [HttpPost("signup")]
+        public async Task<IActionResult> Signup([FromBody] CreateClientDTO clientDto)
+        {
+            try
+            {
+                var newClient = new Client
+                {
+                    Email = clientDto.Email,
+                    Password = clientDto.Password
+                };
 
+                var registeredClient = await _clientService.RegisterClientAsync(newClient);
+                return CreatedAtAction(nameof(Signup), new { id = registeredClient.Id }, new { registeredClient.Email, registeredClient.CreatedAt });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }                                                                                                                                                                                    
+        }
       
     }
 }

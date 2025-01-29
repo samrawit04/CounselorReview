@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\elective_assignment\\CounselorReview\\CounselorReview.csproj": {}
+    "C:\\Users\\HP\\counselorReviewAPII\\CounselorReview\\CounselorReview.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\elective_assignment\\CounselorReview\\CounselorReview.csproj": {
+    "C:\\Users\\HP\\counselorReviewAPII\\CounselorReview\\CounselorReview.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\elective_assignment\\CounselorReview\\CounselorReview.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\counselorReviewAPII\\CounselorReview\\CounselorReview.csproj",
         "projectName": "CounselorReview",
-        "projectPath": "C:\\Users\\HP\\elective_assignment\\CounselorReview\\CounselorReview.csproj",
+        "projectPath": "C:\\Users\\HP\\counselorReviewAPII\\CounselorReview\\CounselorReview.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\elective_assignment\\CounselorReview\\obj\\",
+        "outputPath": "C:\\Users\\HP\\counselorReviewAPII\\CounselorReview\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[3.1.0, )"
