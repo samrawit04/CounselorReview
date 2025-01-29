@@ -6,7 +6,7 @@ using MongoDB.Driver;
 
 namespace counselorReview.Services
 {
-    public class CounselorService 
+    public class CounselorService:ICounselorService
     {
         private readonly IMongoCollection<Counselor> _counselors;
 
@@ -15,7 +15,11 @@ namespace counselorReview.Services
             var database = mongoClient.GetDatabase(settings.Value.DatabaseName);
             _counselors = database.GetCollection<Counselor>("Counselors");
         }
-
+   public async Task<Counselor> RegisterCounselorAsync(Counselor counselor)
+        {
+            await _counselors.InsertOneAsync(counselor);
+            return counselor;
+        }
 
     }
 }

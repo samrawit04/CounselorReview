@@ -18,7 +18,7 @@ namespace counselorReview.Controllers
             _clientService = clientService;
         }
  [HttpPost("signup")]
-        public async Task<IActionResult> Signup([FromBody] CreateClientDTO clientDto)
+        public async Task<IActionResult> Signup([FromBody] CreateUserDTO clientDto)
         {
             try
             {

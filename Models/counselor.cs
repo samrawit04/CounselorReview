@@ -19,7 +19,7 @@ namespace counselorReview.Models
         [BsonRequired]
         public string? Email { get; set; }
 
-
+         public string Password { get; set; } = string.Empty;
         [BsonRequired]
         public List<string> Specializations { get; set; } = new List<string>();
     }
