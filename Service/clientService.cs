@@ -16,7 +16,7 @@ namespace counselorReview.Services
         }
         public async Task<Client> RegisterClientAsync(Client client)
         {
-            // Check if the email is already registered
+            
             var existingClient = await _clients.Find(c => c.Email == client.Email).FirstOrDefaultAsync();
             if (existingClient != null)
             {

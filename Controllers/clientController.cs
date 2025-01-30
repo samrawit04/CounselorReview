@@ -31,7 +31,7 @@ namespace counselorReview.Controllers
                     Password = clientDto.Password
                 };
 
-                var registeredClient = await _clientService.RegisterClientAsync(newClient);
+                var registeredClient = await _clientService.(newClient);
 
                 if (registeredClient == null)
                 {

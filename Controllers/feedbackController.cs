@@ -24,12 +24,7 @@ namespace counselorReview.Controllers
         }
 
        
-        [HttpGet]
-        public async Task<ActionResult<List<FeedbackDTO>>> GetAllFeedback()
-        {
-            var feedbacks = await _feedbackService.GetAllFeedbackAsync();
-            return Ok(feedbacks);
-        }
+       
 
         [HttpGet("{id}")]
         public async Task<ActionResult<FeedbackDTO>> GetFeedbackById(string id)
@@ -40,13 +35,19 @@ namespace counselorReview.Controllers
 
             return Ok(feedback);
         }
+        [HttpGet]
+public async Task<ActionResult<List<FeedbackDTO>>> GetAllFeedback([FromQuery] int page = 1, [FromQuery] int pageSize = 2)
+{
+    var feedbacks = await _feedbackService.GetAllFeedbackAsync(page, pageSize);
+    return Ok(feedbacks);
+}
 
-        [HttpGet("search")]
-        public async Task<ActionResult<List<FeedbackDTO>>> SearchFeedbackByClientName([FromQuery] string clientName)
-        {
-            var feedbacks = await _feedbackService.SearchFeedbackByClientNameAsync(clientName);
-            return Ok(feedbacks);
-        }
+       [HttpGet("search")]
+public async Task<ActionResult<List<FeedbackDTO>>> SearchFeedbackByClientName([FromQuery] string clientName, [FromQuery] int page = 1, [FromQuery] int pageSize = 2)
+{
+    var feedbacks = await _feedbackService.SearchFeedbackByClientNameAsync(clientName, page, pageSize);
+    return Ok(feedbacks);
+}
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateFeedback(string id, [FromBody] CreateFeedbackDTO dto)
@@ -67,6 +68,5 @@ namespace counselorReview.Controllers
 
             return NoContent();
         }
-      
     }
 }
