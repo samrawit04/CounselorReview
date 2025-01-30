@@ -115,11 +115,11 @@ namespace counselorReview.Services
 
  public async Task<List<FeedbackDTO>> GetAllFeedbackAsync(int page = 1, int pageSize = 2)
 {
-    // Skip and limit the results based on page number and page size
+   
     var feedbacks = await _feedbacks
         .Find(_ => true)
-        .Skip((page - 1) * pageSize)  // Skip based on page
-        .Limit(pageSize)  // Limit based on pageSize
+        .Skip((page - 1) * pageSize) 
+        .Limit(pageSize)  
         .ToListAsync();
 
     var feedbackDtos = new List<FeedbackDTO>();
