@@ -24,8 +24,8 @@ namespace counselorReview.Models
         public string Password { get; set; } = string.Empty;
 
         [BsonRequired]
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;  // Default to current date and time
+    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow; 
 
     }
 }

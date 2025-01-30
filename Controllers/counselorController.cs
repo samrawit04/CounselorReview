@@ -53,12 +53,14 @@ namespace counselorReview.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
-  [HttpGet]
+        
+       [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var counselors = await _counselorService.GetAllCounselorsAsync();
             return Ok(counselors);
         }
+
          [HttpGet("{id}")]
         public async Task<ActionResult<CounselorDTO>> GetById(string id)
         {

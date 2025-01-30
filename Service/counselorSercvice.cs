@@ -36,10 +36,27 @@ namespace counselorReview.Services
             return counselor;
         }
 
-        public async Task<List<Counselor>> GetAllCounselorsAsync()
-        {
-            return await _counselors.Find(_ => true).ToListAsync();
-        }
+       public async Task<List<CounselorDTO>> GetAllCounselorsAsync()
+{
+    var counselors = await _counselors.Find(_ => true).ToListAsync();
+    
+    // Check if 'CreatedAt' is missing and assign a default value
+    foreach (var counselor in counselors)
+    {
+        if (counselor.CreatedAt == default)
+            counselor.CreatedAt = DateTime.UtcNow;
+    }
+
+    return counselors.Select(c => new CounselorDTO
+    {
+        Id = c.Id,
+        FullName = c.FullName,
+        Email = c.Email,
+        Specializations = c.Specializations,
+        CreatedAt = c.CreatedAt,
+        UpdatedAt = c.UpdatedAt
+    }).ToList();
+   }
 
         public async Task<CounselorDTO> GetCounselorByIdAsync(string id)
         {

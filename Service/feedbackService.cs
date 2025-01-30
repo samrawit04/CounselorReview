@@ -113,15 +113,15 @@ namespace counselorReview.Services
             return result.DeletedCount > 0;
         }
 
- public async Task<List<FeedbackDTO>> SearchFeedbackByClientNameAsync(string clientName)
+ public async Task<List<FeedbackDTO>> GetAllFeedbackAsync(int page = 1, int pageSize = 2)
 {
-var clients = await _clients.Find(c => c.FullName != null && c.FullName.Contains(clientName)).ToListAsync();
+    // Skip and limit the results based on page number and page size
+    var feedbacks = await _feedbacks
+        .Find(_ => true)
+        .Skip((page - 1) * pageSize)  // Skip based on page
+        .Limit(pageSize)  // Limit based on pageSize
+        .ToListAsync();
 
-    
-    var clientIds = clients.Select(c => c.Id).ToList();
-    var feedbacks = await _feedbacks.Find(f => clientIds.Contains(f.ClientId)).ToListAsync();
-
-  
     var feedbackDtos = new List<FeedbackDTO>();
     foreach (var feedback in feedbacks)
     {
@@ -131,10 +131,42 @@ var clients = await _clients.Find(c => c.FullName != null && c.FullName.Contains
         feedbackDtos.Add(new FeedbackDTO
         {
             Id = feedback.Id,
-            ClientId = feedback.ClientId,
-            CounselorId = feedback.CounselorId,
+            ClientId = feedback.ClientId!,
+            CounselorId = feedback.CounselorId!,
+            ClientName = client?.FullName,
+            CounselorName = counselor?.FullName,
+            Comment = feedback.Comment,
+            CreatedAt = feedback.CreatedAt
+        });
+    }
+
+    return feedbackDtos;
+}
+
+public async Task<List<FeedbackDTO>> SearchFeedbackByClientNameAsync(string clientName, int page = 1, int pageSize = 2)
+{
+    var clients = await _clients
+        .Find(c => c.FullName != null && c.FullName.Contains(clientName))
+        .Skip((page - 1) * pageSize)
+        .Limit(pageSize)
+        .ToListAsync();
+
+    var clientIds = clients.Select(c => c.Id).ToList();
+    var feedbacks = await _feedbacks.Find(f => clientIds.Contains(f.ClientId)).ToListAsync();
+
+    var feedbackDtos = new List<FeedbackDTO>();
+    foreach (var feedback in feedbacks)
+    {
+        var client = await _clients.Find(c => c.Id == feedback.ClientId).FirstOrDefaultAsync();
+        var counselor = await _counselors.Find(c => c.Id == feedback.CounselorId).FirstOrDefaultAsync();
+
+        feedbackDtos.Add(new FeedbackDTO
+        {
+            Id = feedback.Id,
+            ClientId = feedback.ClientId!,
+            CounselorId = feedback.CounselorId!,
             ClientName = client?.FullName ?? "Unknown",
-            CounselorName = counselor?.FullName ?? "Unknown", 
+            CounselorName = counselor?.FullName ?? "Unknown",
             Comment = feedback.Comment,
             CreatedAt = feedback.CreatedAt
         });
