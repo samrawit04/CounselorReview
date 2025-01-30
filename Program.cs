@@ -5,19 +5,17 @@ using MongoDB.Driver;
 using counselorReview.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Register MongoDB settings from appsettings.json
 builder.Services.Configure<MongoDBSettings>(
     builder.Configuration.GetSection("MongoDBSettings"));
 
-// Inject MongoDB client
+
 builder.Services.AddSingleton<IMongoClient>(sp =>
 {
     var settings = sp.GetRequiredService<IOptions<MongoDBSettings>>().Value;
     return new MongoClient(settings.ConnectionString);
 });
 
-// Register MongoDB database
+
 builder.Services.AddScoped<IMongoDatabase>(sp =>
 {
     var settings = sp.GetRequiredService<IOptions<MongoDBSettings>>().Value;
@@ -25,42 +23,29 @@ builder.Services.AddScoped<IMongoDatabase>(sp =>
     return client.GetDatabase(settings.DatabaseName);
 });
 
-// Register MongoDbContext
-builder.Services.AddScoped<IMongoDbContext, MongoDbContext>(sp =>
-{
-    var database = sp.GetRequiredService<IMongoDatabase>();
-    return new MongoDbContext(database); // Pass the database to your context
-});
 
-// Register Services
-builder.Services.AddScoped<IClientService, ClientService>();
-builder.Services.AddScoped<CounselorService>();
-builder.Services.AddScoped<FeedbackService>();
+builder.Services.AddScoped<IClientService,ClientService>();
+builder.Services.AddScoped<ICounselorService,CounselorService>();
+builder.Services.AddScoped<IFeedbackService,FeedbackService>();
 
-// Enable Authorization
 builder.Services.AddAuthorization();
 
-// Add controllers service
+
 builder.Services.AddControllers();
 
-// Set up Swagger for API documentation
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// Enable Authorization middleware
 app.UseAuthorization();
-
-// Map controllers to the app
 app.MapControllers();
-
-// Run the application
 app.Run();
