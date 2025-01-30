@@ -15,7 +15,7 @@ namespace counselorReview.Controllers
         {
             _feedbackService = feedbackService;
         }
- // Create Feedback
+
         [HttpPost]
         public async Task<IActionResult> CreateFeedback([FromBody] CreateFeedbackDTO dto)
         {
@@ -23,7 +23,7 @@ namespace counselorReview.Controllers
             return CreatedAtAction(nameof(GetFeedbackById), new { id = createdFeedback.Id }, createdFeedback);
         }
 
-        // Get All Feedback
+       
         [HttpGet]
         public async Task<ActionResult<List<FeedbackDTO>>> GetAllFeedback()
         {
@@ -31,7 +31,6 @@ namespace counselorReview.Controllers
             return Ok(feedbacks);
         }
 
-        // Get Feedback by ID
         [HttpGet("{id}")]
         public async Task<ActionResult<FeedbackDTO>> GetFeedbackById(string id)
         {
@@ -42,7 +41,6 @@ namespace counselorReview.Controllers
             return Ok(feedback);
         }
 
-        // Search Feedback by Client Name
         [HttpGet("search")]
         public async Task<ActionResult<List<FeedbackDTO>>> SearchFeedbackByClientName([FromQuery] string clientName)
         {
@@ -50,7 +48,6 @@ namespace counselorReview.Controllers
             return Ok(feedbacks);
         }
 
-        // Update Feedback
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateFeedback(string id, [FromBody] CreateFeedbackDTO dto)
         {
@@ -61,7 +58,6 @@ namespace counselorReview.Controllers
             return NoContent();
         }
 
-        // Delete Feedback
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteFeedback(string id)
         {

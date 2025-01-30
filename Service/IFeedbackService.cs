@@ -7,11 +7,11 @@ namespace counselorReview.Services
 {
     public interface IFeedbackService
     {
-       Task<FeedbackDTO> CreateFeedbackAsync(CreateFeedbackDTO dto);
+        Task<FeedbackDTO> CreateFeedbackAsync(CreateFeedbackDTO dto);
         Task<List<FeedbackDTO>> GetAllFeedbackAsync();
         Task<FeedbackDTO?> GetFeedbackByIdAsync(string id);
         Task<bool> UpdateFeedbackAsync(string id, CreateFeedbackDTO dto);
         Task<bool> DeleteFeedbackAsync(string id);
-         Task<List<FeedbackDTO>> SearchFeedbackByClientNameAsync(string clientName);
+        Task<List<FeedbackDTO>> SearchFeedbackByClientNameAsync(string clientName);
     }
 }

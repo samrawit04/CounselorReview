@@ -8,7 +8,7 @@ namespace counselorReview.Services
         Task<Counselor> RegisterCounselorAsync(Counselor counselor);
         Task<List<Counselor>> GetAllCounselorsAsync();
         Task<CounselorDTO> GetCounselorByIdAsync(string id);
-         Task<CounselorDTO> UpdateCounselorAsync(string id, CounselorDTO updateDto);
+        Task<CounselorDTO> UpdateCounselorAsync(string id, CounselorDTO updateDto);
         Task<bool> DeleteCounselorAsync(string id);
     }
 }

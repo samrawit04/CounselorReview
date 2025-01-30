@@ -34,7 +34,6 @@ namespace counselorReview.Services
 
             await _feedbacks.InsertOneAsync(feedback);
 
-            // Get client and counselor names
             var client = await _clients.Find(c => c.Id == dto.ClientId).FirstOrDefaultAsync();
             var counselor = await _counselors.Find(c => c.Id == dto.CounselorId).FirstOrDefaultAsync();
 
@@ -43,14 +42,13 @@ namespace counselorReview.Services
                 Id = feedback.Id,
                 ClientId = feedback.ClientId!,
                 CounselorId = feedback.CounselorId!,
-                ClientName = client?.FullName, // Client's name
-                CounselorName = counselor?.FullName, // Counselor's name
+                ClientName = client?.FullName, 
+                CounselorName = counselor?.FullName, 
                 Comment = feedback.Comment,
                 CreatedAt = feedback.CreatedAt
             };
         }
 
-        // Get All Feedback
         public async Task<List<FeedbackDTO>> GetAllFeedbackAsync()
         {
             var feedbacks = await _feedbacks.Find(_ => true).ToListAsync();
@@ -76,7 +74,6 @@ namespace counselorReview.Services
             return feedbackDtos;
         }
 
-        // Get Feedback By ID
         public async Task<FeedbackDTO?> GetFeedbackByIdAsync(string id)
         {
             var feedback = await _feedbacks.Find(f => f.Id == id).FirstOrDefaultAsync();
@@ -98,7 +95,6 @@ namespace counselorReview.Services
             };
         }
 
-        // Update Feedback
         public async Task<bool> UpdateFeedbackAsync(string id, CreateFeedbackDTO dto)
         {
             var update = Builders<Feedback>.Update
@@ -111,26 +107,21 @@ namespace counselorReview.Services
             return result.ModifiedCount > 0;
         }
 
-        // Delete Feedback
         public async Task<bool> DeleteFeedbackAsync(string id)
         {
             var result = await _feedbacks.DeleteOneAsync(f => f.Id == id);
             return result.DeletedCount > 0;
         }
 
-        // Search Feedback by Client Name
  public async Task<List<FeedbackDTO>> SearchFeedbackByClientNameAsync(string clientName)
 {
-    // Find all clients matching the client name
 var clients = await _clients.Find(c => c.FullName != null && c.FullName.Contains(clientName)).ToListAsync();
 
     
     var clientIds = clients.Select(c => c.Id).ToList();
-
-    // Find all feedbacks where ClientId matches the found client IDs
     var feedbacks = await _feedbacks.Find(f => clientIds.Contains(f.ClientId)).ToListAsync();
 
-    // Create FeedbackDTOs
+  
     var feedbackDtos = new List<FeedbackDTO>();
     foreach (var feedback in feedbacks)
     {
@@ -142,8 +133,8 @@ var clients = await _clients.Find(c => c.FullName != null && c.FullName.Contains
             Id = feedback.Id,
             ClientId = feedback.ClientId,
             CounselorId = feedback.CounselorId,
-            ClientName = client?.FullName ?? "Unknown", // Providing fallback for null values
-            CounselorName = counselor?.FullName ?? "Unknown", // Providing fallback for null values
+            ClientName = client?.FullName ?? "Unknown",
+            CounselorName = counselor?.FullName ?? "Unknown", 
             Comment = feedback.Comment,
             CreatedAt = feedback.CreatedAt
         });
@@ -151,7 +142,5 @@ var clients = await _clients.Find(c => c.FullName != null && c.FullName.Contains
 
     return feedbackDtos;
 }
-
-
     }
 }

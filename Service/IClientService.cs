@@ -7,7 +7,7 @@ namespace counselorReview.Services
 {
     public interface IClientService
     {
-       Task<List<Client>> GetAllClientsAsync();
+        Task<List<Client>> GetAllClientsAsync();
         Task<Client?> GetClientByIdAsync(string id);
         Task<Client?> UpdateClientAsync(string id, Client updatedClient);
         Task<bool> DeleteClientAsync(string id);

@@ -17,31 +17,26 @@ namespace counselorReview.Controllers
             _counselorService = counselorService;
         }
 
-          // POST: api/Counselor/signup
         [HttpPost("signup")]
         public async Task<IActionResult> Signup([FromBody] CreateUserDTO counselorDto)
         {
             try
             {
-                // Validate and create a new counselor object from the DTO
                 var newCounselor = new Counselor
                 {
                     FullName = counselorDto.FullName,
                     Email = counselorDto.Email,
-                    Password = counselorDto.Password, // Don't hash password yet, service handles it
+                    Password = counselorDto.Password,
                     Specializations = counselorDto.Specializations,
                 };
 
-                // Register the counselor
                 var registeredCounselor = await _counselorService.RegisterCounselorAsync(newCounselor);
 
-                // Ensure the registeredCounselor is not null
                 if (registeredCounselor == null)
                 {
                     return BadRequest(new { message = "Failed to register the counselor." });
                 }
 
-                // Map the registered counselor to a response DTO and provide default values if necessary
                 var counselorResponse = new UserResponseDTO
                 {
                     Id = registeredCounselor.Id ?? string.Empty,
@@ -75,7 +70,6 @@ namespace counselorReview.Controllers
             return Ok(counselor);
         }
 
-        // PUT: api/Counselor/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, [FromBody] CounselorDTO updateDto)
         {
@@ -87,7 +81,6 @@ namespace counselorReview.Controllers
             return Ok(updatedCounselor);
         }
 
-        // DELETE: api/Counselor/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {

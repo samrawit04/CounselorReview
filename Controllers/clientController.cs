@@ -24,7 +24,6 @@ namespace counselorReview.Controllers
         {
             try
             {
-                // Validate and create a new client object from the DTO
                 var newClient = new Client
                 {
                     FullName = clientDto.FullName,
@@ -34,18 +33,16 @@ namespace counselorReview.Controllers
 
                 var registeredClient = await _clientService.RegisterClientAsync(newClient);
 
-                // Ensure the registeredClient is not null
                 if (registeredClient == null)
                 {
                     return BadRequest(new { message = "Failed to register the client." });
                 }
 
-                // Map the registered client to a response DTO and provide default values if necessary
                 var clientResponse = new UserResponseDTO
                 {
-                    Id = registeredClient.Id ?? string.Empty, // Handle potential null for Id
-                    FullName = registeredClient.FullName ?? string.Empty, // Handle potential null for FullName
-                    Email = registeredClient.Email ?? string.Empty, // Handle potential null for Email
+                    Id = registeredClient.Id ?? string.Empty, 
+                    FullName = registeredClient.FullName ?? string.Empty, 
+                    Email = registeredClient.Email ?? string.Empty, 
                     CreatedAt = registeredClient.CreatedAt,
                     UpdatedAt = registeredClient.UpdatedAt
                 };
@@ -78,14 +75,13 @@ public async Task<IActionResult> UpdateClient(string id, [FromBody] UpdateUserDT
         return NotFound();
     }
 
-    // Create an updated client, but keep the existing password if not updating it.
     var updatedClient = new Client
     {
         Id = id,
-        FullName = dto.FullName ?? existingClient.FullName,  // Update FullName if provided
-        Email = dto.Email ?? existingClient.Email,  // Update Email if provided
-        Password = existingClient.Password,  // Keep the old password
-        UpdatedAt = DateTime.UtcNow  // Update the UpdatedAt timestamp
+        FullName = dto.FullName ?? existingClient.FullName,  
+        Email = dto.Email ?? existingClient.Email, 
+        Password = existingClient.Password,  
+        UpdatedAt = DateTime.UtcNow  
     };
 
     var result = await _clientService.UpdateClientAsync(id, updatedClient);

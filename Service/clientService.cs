@@ -14,7 +14,7 @@ namespace counselorReview.Services
         {
             _clients = database.GetCollection<Client>("Clients");
         }
-   public async Task<Client> RegisterClientAsync(Client client)
+    public async Task<Client> RegisterClientAsync(Client client)
         {
             // Check if the email is already registered
             var existingClient = await _clients.Find(c => c.Email == client.Email).FirstOrDefaultAsync();
@@ -23,13 +23,11 @@ namespace counselorReview.Services
                 throw new Exception("Email is already in use.");
             }
 
-            // Hash password (using BCrypt.Net-Next)
             client.Password = BCrypt.Net.BCrypt.HashPassword(client.Password);
             client.CreatedAt = DateTime.UtcNow;
 
             await _clients.InsertOneAsync(client);
             
-            // Optionally, remove the password here (it's already hashed)
             client.Password = string.Empty;
 
             return client;

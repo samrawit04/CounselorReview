@@ -32,7 +32,7 @@ namespace counselorReview.Services
 
             await _counselors.InsertOneAsync(counselor);
 
-            counselor.Password = string.Empty; // Remove password before returning
+            counselor.Password = string.Empty; 
             return counselor;
         }
 
@@ -46,7 +46,7 @@ namespace counselorReview.Services
     var counselor = await _counselors.Find(c => c.Id == id).FirstOrDefaultAsync();
     if (counselor == null)
     {
-        throw new Exception("Counselor not found."); // Handle the case properly
+        throw new Exception("Counselor not found.");
     }
 
     return new CounselorDTO
@@ -77,7 +77,7 @@ namespace counselorReview.Services
 
     if (updatedCounselor == null)
     {
-        throw new Exception("Counselor not found."); // Ensure null is never returned
+        throw new Exception("Counselor not found."); 
     }
 
     return new CounselorDTO
