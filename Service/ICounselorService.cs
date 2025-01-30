@@ -1,14 +1,14 @@
+using counselorReview.DTO;
 using counselorReview.Models;
 
 namespace counselorReview.Services
 {
     public interface ICounselorService
     {
-        // Task<IEnumerable<Counselor>> GetAllCounselorsAsync();
-        // Task<Counselor> GetCounselorByIdAsync(string id);
-        // Task CreateCounselorAsync(Counselor counselor);
-        // Task UpdateCounselorAsync(string id, Counselor counselor);
-        // Task DeleteCounselorAsync(string id);
-          Task<Counselor> RegisterCounselorAsync(Counselor counselor);
+        Task<Counselor> RegisterCounselorAsync(Counselor counselor);
+        Task<List<Counselor>> GetAllCounselorsAsync();
+        Task<CounselorDTO> GetCounselorByIdAsync(string id);
+         Task<CounselorDTO> UpdateCounselorAsync(string id, CounselorDTO updateDto);
+        Task<bool> DeleteCounselorAsync(string id);
     }
 }

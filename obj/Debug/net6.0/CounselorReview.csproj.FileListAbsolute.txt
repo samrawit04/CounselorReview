@@ -38,14 +38,6 @@ C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\refint\Counselo
 C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.pdb
 C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\CounselorReview.genruntimeconfig.cache
 C:\Users\HP\elective_assignment\CounselorReview\obj\Debug\net6.0\ref\CounselorReview.dll
-C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.csproj.AssemblyReference.cache
-C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.AssemblyInfoInputs.cache
-C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.AssemblyInfo.cs
-C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.csproj.CoreCompileInputs.cache
-C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.sourcelink.json
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\appsettings.json
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\CounselorReview.staticwebassets.endpoints.json
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\CounselorReview.exe
@@ -53,6 +45,7 @@ C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\CounselorReview
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\CounselorReview.runtimeconfig.json
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\CounselorReview.dll
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\CounselorReview.pdb
+C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\BCrypt.Net-Next.dll
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\DnsClient.dll
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\MongoDB.Bson.dll
@@ -63,6 +56,14 @@ C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\Swashbuckle.Asp
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.csproj.AssemblyReference.cache
+C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.AssemblyInfoInputs.cache
+C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.AssemblyInfo.cs
+C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.csproj.CoreCompileInputs.cache
+C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.sourcelink.json
 C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\scopedcss\bundle\CounselorReview.styles.css
 C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\staticwebassets.development.json
@@ -79,4 +80,3 @@ C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\refint\Counselo
 C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.pdb
 C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\CounselorReview.genruntimeconfig.cache
 C:\Users\HP\counselorReviewAPII\CounselorReview\obj\Debug\net6.0\ref\CounselorReview.dll
-C:\Users\HP\counselorReviewAPII\CounselorReview\bin\Debug\net6.0\BCrypt.Net-Next.dll

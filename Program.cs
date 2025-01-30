@@ -28,7 +28,7 @@ builder.Services.AddScoped<IMongoDatabase>(sp =>
 // Register Services
 builder.Services.AddScoped<IClientService,ClientService>();
 builder.Services.AddScoped<ICounselorService,CounselorService>();
-builder.Services.AddScoped<FeedbackService>();
+builder.Services.AddScoped<IFeedbackService,FeedbackService>();
 
 // Enable Authorization
 builder.Services.AddAuthorization();
