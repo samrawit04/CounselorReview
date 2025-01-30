@@ -19,8 +19,13 @@ namespace counselorReview.Models
         [BsonRequired]
         public string? Email { get; set; }
 
-
         [BsonRequired]
         public List<string> Specializations { get; set; } = new List<string>();
+        public string Password { get; set; } = string.Empty;
+
+        [BsonRequired]
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+
     }
 }
