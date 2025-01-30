@@ -15,7 +15,7 @@ namespace counselorReview.Controllers
         {
             _feedbackService = feedbackService;
         }
-// Create Feedback
+ // Create Feedback
         [HttpPost]
         public async Task<IActionResult> CreateFeedback([FromBody] CreateFeedbackDTO dto)
         {
@@ -40,6 +40,14 @@ namespace counselorReview.Controllers
                 return NotFound(new { message = "Feedback not found" });
 
             return Ok(feedback);
+        }
+
+        // Search Feedback by Client Name
+        [HttpGet("search")]
+        public async Task<ActionResult<List<FeedbackDTO>>> SearchFeedbackByClientName([FromQuery] string clientName)
+        {
+            var feedbacks = await _feedbackService.SearchFeedbackByClientNameAsync(clientName);
+            return Ok(feedbacks);
         }
 
         // Update Feedback

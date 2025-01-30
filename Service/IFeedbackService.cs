@@ -12,5 +12,6 @@ namespace counselorReview.Services
         Task<FeedbackDTO?> GetFeedbackByIdAsync(string id);
         Task<bool> UpdateFeedbackAsync(string id, CreateFeedbackDTO dto);
         Task<bool> DeleteFeedbackAsync(string id);
+         Task<List<FeedbackDTO>> SearchFeedbackByClientNameAsync(string clientName);
     }
 }
